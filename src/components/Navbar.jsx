@@ -26,13 +26,16 @@ const Navbar = () => {
               Home
             </a>
             <a href="#" className="text-white hover:text-gray-300">
-              About
+              Events
             </a>
             <a href="#" className="text-white hover:text-gray-300">
               Projects
             </a>
             <a href="#" className="text-white hover:text-gray-300">
-              Achievements
+              Resources
+            </a>
+            <a href="#" className="text-white hover:text-gray-300">
+              Team
             </a>
             <a href="#" className="text-white hover:text-gray-300">
               Contact Us
