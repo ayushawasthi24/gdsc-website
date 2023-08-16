@@ -1,8 +1,9 @@
 import React from "react";
+import './Hero.css'; 
 
 const Hero = () => {
   return (
-    <div className="bg-blue-900 text-white py-16">
+    <div className="bg-white-900 text-black py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 mb-6 md:mb-0">
@@ -15,7 +16,7 @@ const Hero = () => {
               share, and collaborate on exciting projects and events.
             </p>
             <div className="mt-6">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded">
+              <button className="bg-yellow-400 hover:bg-yellow-400 text-black py-2 px-4 rounded">
                 Join Us
               </button>
             </div>
@@ -29,6 +30,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      
     </div>
   );
 };
