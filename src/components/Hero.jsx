@@ -1,5 +1,5 @@
 import React from "react";
-import './Hero.css'; 
+import "./Hero.css";
 
 const Hero = () => {
   return (
@@ -7,9 +7,11 @@ const Hero = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 mb-6 md:mb-0">
-            <h1 className="text-4xl md:text-6xl font-extrabold">
-              Welcome to GDSC Club!
-            </h1>
+            <div className="heading-container">
+              <h1 className="text-4xl md:text-6xl font-extrabold moving-background-heading">
+                Welcome to GDSC Club!
+              </h1>
+            </div>
             <p className="text-lg mt-4">
               The Google Developer Student Clubs (GDSC) Club at IIT Indore is a
               community for students interested in technology. Join us to learn,
@@ -30,7 +32,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      
     </div>
   );
 };
