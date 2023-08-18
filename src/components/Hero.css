@@ -1,7 +1,5 @@
 /* https://techcrunch.com/wp-content/uploads/2017/04/gettyimages-158318188.jpg */
 .moving-background-heading {
-  margin: 0;
-  font-size: 100px;
   color: rgba(225, 225, 225, 0.01);
   background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f64ff684-b2f8-4c08-ac14-297dd9013c3c/df2n2hn-a2a0c684-3131-4dee-a553-5a5b081ba5ff.png/v1/fill/w_1280,h_800,q_80,strp/google_colors_by_jesssaysno_df2n2hn-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6IlwvZlwvZjY0ZmY2ODQtYjJmOC00YzA4LWFjMTQtMjk3ZGQ5MDEzYzNjXC9kZjJuMmhuLWEyYTBjNjg0LTMxMzEtNGRlZS1hNTUzLTVhNWIwODFiYTVmZi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.M_6SE-zMXIfaR3Ltl5aN8DTMNVYeOGoA89-sfSKwJzo");
   background-repeat: repeat;
@@ -27,3 +25,9 @@
     background-position: right top;
   }
 }
+
+.particles {
+  position: absolute;
+  z-index: -1;
+}
+

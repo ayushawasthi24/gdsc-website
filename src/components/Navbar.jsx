@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-
+import "./Navbar.css";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -8,38 +8,52 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="white-500 py-4">
+    <nav className="py-4 background text-white-500 text-xl navbar">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <img
               src="https://logogen.gdscasu.com/logos/gdsc-logo.png"
               alt="Logo"
-              className="h-8 w-8 mr-2"
+              className="h-8 w-8 mr-2 logo"
             />
             <a href="/" className="text-black text-2xl font-semibold">
               GDSC IIT Indore
             </a>
           </div>
-          <div className="hidden md:flex space-x-6">
-            <a href="/" className="text-black hover:text-gray-300">
-              Home
-            </a>
-            <a href="/events" className="text-black hover:text-gray-300">
-              Events
-            </a>
-            <a href="/projects" className="text-black hover:text-gray-300">
-              Projects
-            </a>
-            <a href="/resources" className="text-black hover:text-gray-300">
-              Resources
-            </a>
-            <a href="/team" className="text-black hover:text-gray-300">
-              Team
-            </a>
-            <a href="/contact" className="text-black hover:text-gray-300">
-              Contact Us
-            </a>
+          <div className="hidden md:flex space-x-6 nav-elements">
+            <ul>
+              <li>
+                <a href="/" className="text-black hover:text-gray-300">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="/events" className="text-black hover:text-gray-300">
+                  Events
+                </a>
+              </li>
+              <li>
+                <a href="/projects" className="text-black hover:text-gray-300">
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a href="/resources" className="text-black hover:text-gray-300">
+                  Resources
+                </a>
+              </li>
+              <li>
+                <a href="/team" className="text-black hover:text-gray-300">
+                  Team
+                </a>
+              </li>
+              <li>
+                <a href="/contact" className="text-black hover:text-gray-300">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
           </div>
           <div className="md:hidden">
             <button
@@ -86,12 +100,18 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="/services" className="block text-black hover:text-gray-300">
+              <a
+                href="/services"
+                className="block text-black hover:text-gray-300"
+              >
                 Services
               </a>
             </li>
             <li>
-              <a href="/contact" className="block text-black hover:text-gray-300">
+              <a
+                href="/contact"
+                className="block text-black hover:text-gray-300"
+              >
                 Contact
               </a>
             </li>
