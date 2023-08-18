@@ -1,0 +1,107 @@
+.cardss{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.card2 {
+    height: 250px;
+    width: 70vw;
+    margin: 20px;
+    color:rgb(255, 255, 255);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .bgimg{
+    padding-left: 10px;
+    padding-top: 10px;
+    z-index: -1;
+    height: 240px;
+    width: 70vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    border-radius: 10px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .content .heading {
+    font-weight: 700;
+    font-size: 32px;
+  }
+  
+  .content .para {
+    line-height: 1.5;
+  }
+  
+  /* .content .btn {
+    color: #e8e8e8;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(-45deg, #fbbc05 0%, #ea4335 100% );
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  } */
+  
+  
+  .card2::before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: black;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(-45deg,#4285f4, #699ff6);
+    z-index: -1;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card2:hover::before {
+    height: 100%;
+  }
+  
+  .card2:hover {
+    box-shadow: none;
+  }
+  
+  /* .card2:hover .btn {
+    color: #212121;
+    background: #e8e8e8;
+  }
+  
+  .content .btn:hover {
+    outline: 2px solid #e8e8e8;
+    background: transparent;
+    color: #e8e8e8;
+  }
+  
+  .content .btn:active {
+    box-shadow: none;
+  } */
+  .para{
+    font-weight: 700;
+    width: fit-content;
+    height: 25px;
+    color: white;
+  }
