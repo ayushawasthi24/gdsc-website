@@ -1,52 +1,164 @@
-import "./Teams.css";
-import {TeamMembers} from "../data/TeamMembers";
-import {motion, Variants} from "framer-motion";
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { WebDevelopment } from '../data/WebDevelopment';
+import {GameDevelopment} from '../data/GameDevelopment';
+import { AppDevelopment } from '../data/AppDevelopment';
 
-const imageAnimate={
-    offscreen:{x:-100, opacity:0},
-    onscreen:{x:0,
-        opacity:1,
-    rotate:[0,10,0]},
-    transition : {type:"spring",
-     bounce:0.4,
-    duration:1}
-}
 
-const textAnimate= {
-      offscreen : {y:100, opacity:0},
-      onscreen:{y:0, 
-        opacity:1,
-      transition: { type:"spring",
-      bounce:0.4, 
-      duration:1  }}
-    }
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+import './Teams.css';
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { MachineLearning } from '../data/MachineLearning';
+import { Blockchain } from '../data/Blockchain';
 
 function Card({ image_url, name, description, id}) {
     return (
-        <motion.div className="card" id={id} 
-        initial= {"offscreen"}
-        whileInView={"onscreen"}
-        viewport={{once:true, amount:0.1}}
-        transition= {{staggerChildren:0.5}}
-        >
-            <motion.div className="image-container"
-           
-            variants={imageAnimate}
-            >
-                {image_url}</motion.div>
-            <motion.h2
-            
-            variants={textAnimate}>{name}</motion.h2>
-            <motion.p
-            variants={textAnimate}>{description}</motion.p>
-        </motion.div>
-    );
-}
+      
+     <div className="container"> 
+      <div className='card'>
+        <div className='content'>
+          <div className='imgBx'>
+          <img src={image_url} />
+          </div>
+          <div className='contentBx'>
+            <h3 style={{color:'red'}}>{name}<br /><span style={{color:'blue'}}>{description}</span></h3>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+    )
+  }
 
 export default function Teams() {
-    return TeamMembers.map((item,index) => (
-        <div className="card-wrapper" key={index}>
-            <Card image={item.image_url} name={item.name} description={item.description} />
+  
+  return (
+    <section style={{backgroundColor:'#fff'}}>
+      <div className='row'>
+        <h1>Our Team</h1>
         </div>
-    ));
+        <div className='row'>
+        <h1>Web Development</h1>
+        </div>
+      <Swiper
+        slidesPerView={3}
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        {WebDevelopment.map((item,index) => (
+        <SwiperSlide><Card image={item.image_url} name={item.name} description={item.description} /></SwiperSlide>
+        ))}
+      </Swiper>
+      <div className='row'>
+        <h1>Game Development</h1>
+        </div>
+        <Swiper
+        slidesPerView={3}
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        {GameDevelopment.map((item,index) => (
+        <SwiperSlide><Card image={item.image_url} name={item.name} description={item.description} /></SwiperSlide>
+        ))}
+      </Swiper>
+      <div className='row backgroundRocket'>
+        <h1 >App Development</h1>
+        </div>
+        
+        <Swiper 
+        slidesPerView={3}
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+       
+      >
+        {AppDevelopment.map((item,index) => (
+        <SwiperSlide><Card image={item.image_url} name={item.name} description={item.description} /></SwiperSlide>
+        ))}
+      </Swiper>
+      <div className='row back'>
+        <h1>Machine Learning</h1>
+        </div>
+        
+        <Swiper
+        slidesPerView={3}
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+       
+      >
+        {MachineLearning.map((item,index) => (
+        <SwiperSlide><Card image={item.image_url} name={item.name} description={item.description} /></SwiperSlide>
+        ))}
+      </Swiper>
+      <div className='row backblock'>
+        <h1>Blockchain</h1>
+        </div>
+        <Swiper
+        slidesPerView={3}
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        {Blockchain.map((item,index) => (
+        <SwiperSlide><Card image={item.image_url} name={item.name} description={item.description} /></SwiperSlide>
+        ))}
+      </Swiper>
+    </section>
+  );
 }
+                                  
