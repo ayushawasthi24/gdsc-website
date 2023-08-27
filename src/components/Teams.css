@@ -1,0 +1,146 @@
+#app {
+    height: 100%;
+  }
+  html,
+  body {
+    position: relative;
+    height: 100%;
+   
+  }
+  
+  body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  body::before
+  {
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f00,#f0f);
+    clip-path: circle(20% at right 70%);
+  }
+  body::after {
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background: linear-gradient(#2196f3,#e91e63);
+    clip-path: circle(20% at 10% 10%);
+    overflow-y: scroll;
+  }
+  
+  .row {
+    padding-bottom: 5rem;
+  }
+  h1 {
+    width:100%;
+    text-align: center;
+    font-size: 3.5em; 
+    font-weight:bolder
+  
+  }
+  .container {
+    position: relative;
+    z-index: 1;
+    margin: 40px 0;
+    height:600px;
+  }
+  .container .card
+  {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgba(255,255,255,0.05);
+    margin:20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+  }
+  .container .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  .container .card .content .imgBx {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border:10px solid rgba(0,0,0,0.25);
+
+  }
+  .container .card .content .imgBx img {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .container .card .content .contentBx h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+  }
+  .container .card .content .contentBx h3 span {
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: initial;
+      
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.backgroundrocket img{
+  height:100px;
+  width:100px;
+  z-index: -400;
+}
+.backgroundRocket {
+  background-image: url('../public/rocket.jpg');
+  background-size: 200px;
+  height:200px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.back {
+  background-image: url('../public/gdsc5.jpg');
+  background-size: 200px;
+  height:200px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.backblock {
+  background-image: url('../public/gdsc4.jpg');
+  background-size: 200px;
+  height:200px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
