@@ -75,7 +75,7 @@ const SendUsMessage = () => {
           <div className="text-center">
             <button
               type="submit"
-              className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full focus:outline-none rounded-xl"
+              className="bg-yellow-500 hover:bg-yellow-500 text-white font-semibold py-2 px-4 rounded-full focus:outline-none rounded-xl"
             >
               Submit
             </button>
