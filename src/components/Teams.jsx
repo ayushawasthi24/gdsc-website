@@ -37,7 +37,7 @@ function Card({ image_url, name, description, id}) {
     )
   }
 
-export default function Teams() {
+export default function Team() {
   
   return (
     <section style={{backgroundColor:'#fff'}}>

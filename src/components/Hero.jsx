@@ -26,7 +26,7 @@ const Hero = () => {
         options={{
           particles: {
             number: {
-              value: 50, // Number of particles
+              value: 25, // Number of particles
             },
             color: {
               value: ["#4285F4", "#0F9D58", "#F4B400", "#DB4437", "#4285F4"],
@@ -70,7 +70,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="container">
-            <h1>Hello wordl</h1>
+            {/* <h1>Hello wordl</h1> */}
           </div>
         </div>
       </div>

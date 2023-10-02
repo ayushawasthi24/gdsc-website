@@ -1,16 +1,16 @@
 import React from "react";
 import { useState } from "react";
 import "./Navbar.css";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
   return (
     <nav className="py-4 background text-white-500 text-xl navbar">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between mt-1">
           <div className="flex items-center">
             <img
               src="https://logogen.gdscasu.com/logos/gdsc-logo.png"
@@ -24,34 +24,22 @@ const Navbar = () => {
           <div className="hidden md:flex space-x-6 nav-elements">
             <ul>
               <li>
-                <a href="/" className="text-black hover:text-gray-300">
-                  Home
-                </a>
+                <NavLink to={"/"}>Home</NavLink>
               </li>
               <li>
-                <a href="/events" className="text-black hover:text-gray-300">
-                  Events
-                </a>
+                <NavLink to={"/events"}>Events</NavLink>
               </li>
               <li>
-                <a href="/projects" className="text-black hover:text-gray-300">
-                  Projects
-                </a>
+                <NavLink to={"/projects"}>Projects</NavLink>
               </li>
               <li>
-                <a href="/resources" className="text-black hover:text-gray-300">
-                  Resources
-                </a>
+                <NavLink to={"/resources"}>Resources</NavLink>
               </li>
               <li>
-                <a href="/team" className="text-black hover:text-gray-300">
-                  Team
-                </a>
+                <NavLink to={"/team"}>Team</NavLink>
               </li>
               <li>
-                <a href="/contact" className="text-black hover:text-gray-300">
-                  Contact Us
-                </a>
+                <NavLink to={"/contact"}>Contact Us</NavLink>
               </li>
             </ul>
           </div>
