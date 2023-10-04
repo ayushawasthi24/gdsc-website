@@ -2,7 +2,7 @@ import React from "react";
 
 const Domains = () => {
   return (
-    <div className="flex flex-col h-auto md:h-96 justify-center items-center bg-black">
+    <div className="flex flex-col h-auto md:h-96 justify-center items-center bg-black py-5">
       <h1 className="text-white text-4xl md:text-5xl mb-4 font-black">
         Domains
       </h1>
