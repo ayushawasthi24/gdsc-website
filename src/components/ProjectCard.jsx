@@ -5,7 +5,7 @@ const ProjectCard = ({ title, description, imageUrl, demoUrl, githubUrl }) => {
   return (
     <motion.div
       whileHover={{ scale: 1.05 }}
-      className="max-w-xs rounded overflow-hidden shadow-lg mx-4 my-6"
+      className="max-w-xs rounded-lg overflow-hidden shadow-lg mx-4 my-6"
     >
       <motion.img
         initial={{ opacity: 0 }}

@@ -5,7 +5,7 @@ const ResourceCard = ({ title, description, link }) => {
   return (
     <motion.div
       whileHover={{ scale: 1.05 }}
-      className="bg-white rounded-lg p-4 shadow-md"
+      className="bg-white rounded-lg p-4 shadow-lg"
     >
       <h2 className="text-xl font-semibold mb-2">{title}</h2>
       <p className="text-gray-600">{description}</p>

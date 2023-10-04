@@ -76,7 +76,7 @@ const ProjectShowcase = () => {
       exit={{ opacity: 0 }}
       className="bg-gradient-to-br from-blue-100 via-green-100 to-yellow-100 text-gray-800 py-12"
     >
-      <div className="container mx-auto">
+      <div className="mx-auto">
         <h1 className="text-3xl font-semibold text-center mb-6">
           Our Projects
         </h1>

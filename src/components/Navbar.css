@@ -17,6 +17,10 @@ body {
   height: 100%;
 }
 
+.background {
+  background-color: #fef7e5;
+}
+
 .navbar {
   height: 5rem;
   background-color: #fef7e5;

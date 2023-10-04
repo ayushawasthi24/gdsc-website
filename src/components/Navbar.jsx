@@ -75,32 +75,43 @@ const Navbar = () => {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden bg-gray-600">
+        <div className="md:hidden background">
           <ul className="px-4 py-2 space-y-2">
-            <li>
-              <a href="/" className="block text-black hover:text-gray-300">
+            <li className="">
+              <a href="/" className="block text-black hover:text-gray-300 border-2 border-gray-400 focus:outline rounded-xl">
                 Home
               </a>
             </li>
-            <li>
-              <a href="/about" className="block text-black hover:text-gray-300">
-                About
+            <li className="">
+              <a
+                href="/events"
+                className="block text-black hover:text-gray-300 border-2 border-gray-400 focus:outline rounded-xl"
+              >
+                Events
               </a>
             </li>
-            <li>
+            <li className="">
               <a
-                href="/services"
-                className="block text-black hover:text-gray-300"
+                href="/projects"
+                className="block text-black hover:text-gray-300 border-2 border-gray-400 focus:outline rounded-xl"
               >
-                Services
+                Projects
               </a>
             </li>
-            <li>
+            <li className="">
               <a
-                href="/contact"
-                className="block text-black hover:text-gray-300"
+                href="/resources"
+                className="block text-black hover:text-gray-300 border-2 border-gray-400 focus:outline rounded-xl"
               >
-                Contact
+                Resources
+              </a>
+            </li>
+            <li className="">
+              <a
+                href="/contactus"
+                className="block text-black hover:text-gray-300 border-2 border-gray-400 focus:outline rounded-xl"
+              >
+                Contact Us
               </a>
             </li>
           </ul>
