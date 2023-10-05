@@ -10,8 +10,6 @@ const Footer = () => {
         </h2>
         <p>IIT Indore</p>
         <p>Address: IIT Indore Simrol, Indore, Madhya Pradesh</p>
-
-        {/* Social Media Links */}
         <div className="flex space-x-4">
           <a
             href="#"
