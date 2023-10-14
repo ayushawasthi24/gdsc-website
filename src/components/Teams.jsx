@@ -49,7 +49,7 @@ export default function Teams() {
         </div>
         <Swiper
         spaceBetween={30}
-        slidesPerView={3}
+        slidesPerView={4}
         centeredSlides={true}
         autoplay={{
           delay: 2500,
@@ -59,6 +59,17 @@ export default function Teams() {
           clickable: true,
         }}
         navigation={true}
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 80,
+          },
+          
+        }}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
@@ -82,6 +93,17 @@ export default function Teams() {
           clickable: true,
         }}
         navigation={true}
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 80,
+          },
+          
+        }}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
@@ -106,6 +128,17 @@ export default function Teams() {
           clickable: true,
         }}
         navigation={true}
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 80,
+          },
+          
+        }}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
@@ -130,6 +163,17 @@ export default function Teams() {
           clickable: true,
         }}
         navigation={true}
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 80,
+          },
+          
+        }}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
@@ -153,6 +197,17 @@ export default function Teams() {
           clickable: true,
         }}
         navigation={true}
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 80,
+          },
+          
+        }}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
