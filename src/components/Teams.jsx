@@ -47,9 +47,9 @@ export default function Team() {
         <div className='row'>
         <h1>Web Development</h1>
         </div>
-      <Swiper
-        slidesPerView={3}
+        <Swiper
         spaceBetween={30}
+        slidesPerView={3}
         centeredSlides={true}
         autoplay={{
           delay: 2500,
@@ -65,13 +65,14 @@ export default function Team() {
         {WebDevelopment.map((item,index) => (
         <SwiperSlide><Card image={item.image_url} name={item.name} description={item.description} /></SwiperSlide>
         ))}
+        
       </Swiper>
       <div className='row'>
         <h1>Game Development</h1>
         </div>
         <Swiper
-        slidesPerView={3}
         spaceBetween={30}
+        slidesPerView={3}
         centeredSlides={true}
         autoplay={{
           delay: 2500,
@@ -87,14 +88,15 @@ export default function Team() {
         {GameDevelopment.map((item,index) => (
         <SwiperSlide><Card image={item.image_url} name={item.name} description={item.description} /></SwiperSlide>
         ))}
+        
       </Swiper>
       <div className='row backgroundRocket'>
         <h1 >App Development</h1>
         </div>
         
-        <Swiper 
-        slidesPerView={3}
+        <Swiper
         spaceBetween={30}
+        slidesPerView={3}
         centeredSlides={true}
         autoplay={{
           delay: 2500,
@@ -106,19 +108,19 @@ export default function Team() {
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
-       
       >
         {AppDevelopment.map((item,index) => (
         <SwiperSlide><Card image={item.image_url} name={item.name} description={item.description} /></SwiperSlide>
         ))}
+        
       </Swiper>
       <div className='row back'>
         <h1>Machine Learning</h1>
         </div>
         
         <Swiper
-        slidesPerView={3}
         spaceBetween={30}
+        slidesPerView={3}
         centeredSlides={true}
         autoplay={{
           delay: 2500,
@@ -130,18 +132,18 @@ export default function Team() {
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
-       
       >
         {MachineLearning.map((item,index) => (
         <SwiperSlide><Card image={item.image_url} name={item.name} description={item.description} /></SwiperSlide>
         ))}
+        
       </Swiper>
       <div className='row backblock'>
         <h1>Blockchain</h1>
         </div>
         <Swiper
-        slidesPerView={3}
         spaceBetween={30}
+        slidesPerView={3}
         centeredSlides={true}
         autoplay={{
           delay: 2500,
@@ -157,6 +159,7 @@ export default function Team() {
         {Blockchain.map((item,index) => (
         <SwiperSlide><Card image={item.image_url} name={item.name} description={item.description} /></SwiperSlide>
         ))}
+        
       </Swiper>
     </section>
   );
