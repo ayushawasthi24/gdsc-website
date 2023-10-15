@@ -8,7 +8,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="py-4 background text-white-500 text-xl navbar">
+    <nav className="py-4 bg-[#fef7e5] text-white-500 text-xl border-black border-2 rounded-xl z-10 m-2 sticky top-2 backdrop-filter backdrop-blur-lg bg-opacity-30">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between mt-1">
           <div className="flex items-center">
@@ -75,10 +75,13 @@ const Navbar = () => {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden background">
+        <div className="md:hidden">
           <ul className="px-4 py-2 space-y-2">
             <li className="">
-              <a href="/" className="block text-black hover:text-gray-300 border-2 border-gray-400 focus:outline rounded-xl">
+              <a
+                href="/"
+                className="block text-black hover:text-gray-300 border-2 border-gray-400 focus:outline rounded-xl"
+              >
                 Home
               </a>
             </li>
@@ -108,7 +111,7 @@ const Navbar = () => {
             </li>
             <li className="">
               <a
-                href="/contactus"
+                href="/contact"
                 className="block text-black hover:text-gray-300 border-2 border-gray-400 focus:outline rounded-xl"
               >
                 Contact Us

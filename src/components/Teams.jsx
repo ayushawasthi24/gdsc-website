@@ -1,53 +1,52 @@
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { WebDevelopment } from '../data/WebDevelopment';
-import {GameDevelopment} from '../data/GameDevelopment';
-import { AppDevelopment } from '../data/AppDevelopment';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "./Teams.css";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { WebDevelopment } from "../data/WebDevelopment";
+import { GameDevelopment } from "../data/GameDevelopment";
+import { AppDevelopment } from "../data/AppDevelopment";
+import { MachineLearning } from "../data/MachineLearning";
+import { Blockchain } from "../data/Blockchain";
 
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
-import './Teams.css';
-
-// import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import { MachineLearning } from '../data/MachineLearning';
-import { Blockchain } from '../data/Blockchain';
-
-function Card({ image_url, name, description, id}) {
-    return (
-      
-     <div className="container"> 
-      <div className='card'>
-        <div className='content'>
-          <div className='imgBx'>
-          <img src={image_url} />
+function Card({ image_url, name, description, id }) {
+  return (
+    <div className="container sm:grid sm:grid-cols-2 sm:gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+      <div className="card bg-gray-500 p-4 m-2 rounded-lg shadow-lg">
+        <div className="content">
+          <div className="imgBx">
+            <img src={image_url} alt={name} className="w-full h-auto" />
           </div>
-          <div className='contentBx'>
-            <h3 style={{color:'red'}}>{name}<br /><span style={{color:'blue'}}>{description}</span></h3>
+          <div className="contentBx mt-2">
+            <h3 className="text-red-500 text-lg font-semibold">
+              {name}
+              <br />
+              <span className="text-blue-500 text-sm">{description}</span>
+            </h3>
           </div>
         </div>
       </div>
-      </div>
-      
-    )
-  }
+    </div>
+  );
+}
+
 
 export default function Team() {
-  
   return (
-    <section style={{backgroundColor:'#fff'}}>
-      <div className='row'>
-        <h1>Our Team</h1>
-        </div>
-        <div className='row'>
-        <h1>Web Development</h1>
-        </div>
-        <Swiper
+    <section className="bg-gradient-to-r from-violet-300 to-violet-400">
+      <div className="row">
+        <h1 className="text-center text-4xl md:text-5xl lg:text-5xl font-bold">
+          Our Team
+        </h1>
+      </div>
+      <div className="row">
+        <h1 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold">
+          Web Development
+        </h1>
+      </div>
+      <Swiper
         spaceBetween={30}
         slidesPerView={4}
         centeredSlides={true}
@@ -68,20 +67,26 @@ export default function Team() {
             slidesPerView: 3,
             spaceBetween: 80,
           },
-          
         }}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        {WebDevelopment.map((item,index) => (
-        <SwiperSlide><Card image={item.image_url} name={item.name} description={item.description} /></SwiperSlide>
+        {WebDevelopment.map((item, index) => (
+          <SwiperSlide key={item.id}>
+            <Card
+              image_url={item.image_url}
+              name={item.name}
+              description={item.description}
+            />
+          </SwiperSlide>
         ))}
-        
       </Swiper>
-      <div className='row'>
-        <h1>Game Development</h1>
-        </div>
-        <Swiper
+      <div className="pb-2">
+        <h1 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold">
+          Game Development
+        </h1>
+      </div>
+      <Swiper
         spaceBetween={30}
         slidesPerView={3}
         centeredSlides={true}
@@ -102,21 +107,26 @@ export default function Team() {
             slidesPerView: 3,
             spaceBetween: 80,
           },
-          
         }}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        {GameDevelopment.map((item,index) => (
-        <SwiperSlide><Card image={item.image_url} name={item.name} description={item.description} /></SwiperSlide>
+        {GameDevelopment.map((item, index) => (
+          <SwiperSlide key={item.id}>
+            <Card
+              image_url={item.image_url}
+              name={item.name}
+              description={item.description}
+            />
+          </SwiperSlide>
         ))}
-        
       </Swiper>
-      <div className='row backgroundRocket'>
-        <h1 >App Development</h1>
-        </div>
-        
-        <Swiper
+      <div className="row backgroundRocket">
+        <h1 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold">
+          App Development
+        </h1>
+      </div>
+      <Swiper
         spaceBetween={30}
         slidesPerView={3}
         centeredSlides={true}
@@ -137,21 +147,26 @@ export default function Team() {
             slidesPerView: 3,
             spaceBetween: 80,
           },
-          
         }}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        {AppDevelopment.map((item,index) => (
-        <SwiperSlide><Card image={item.image_url} name={item.name} description={item.description} /></SwiperSlide>
+        {AppDevelopment.map((item, index) => (
+          <SwiperSlide key={item.id}>
+            <Card
+              image_url={item.image_url}
+              name={item.name}
+              description={item.description}
+            />
+          </SwiperSlide>
         ))}
-        
       </Swiper>
-      <div className='row back'>
-        <h1>Machine Learning</h1>
-        </div>
-        
-        <Swiper
+      <div className="row back">
+        <h1 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold">
+          Machine Learning
+        </h1>
+      </div>
+      <Swiper
         spaceBetween={30}
         slidesPerView={3}
         centeredSlides={true}
@@ -172,20 +187,26 @@ export default function Team() {
             slidesPerView: 3,
             spaceBetween: 80,
           },
-          
         }}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        {MachineLearning.map((item,index) => (
-        <SwiperSlide><Card image={item.image_url} name={item.name} description={item.description} /></SwiperSlide>
+        {MachineLearning.map((item, index) => (
+          <SwiperSlide key={item.id}>
+            <Card
+              image_url={item.image_url}
+              name={item.name}
+              description={item.description}
+            />
+          </SwiperSlide>
         ))}
-        
       </Swiper>
-      <div className='row backblock'>
-        <h1>Blockchain</h1>
-        </div>
-        <Swiper
+      <div className="row backblock">
+        <h1 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold">
+          Blockchain
+        </h1>
+      </div>
+      <Swiper
         spaceBetween={30}
         slidesPerView={3}
         centeredSlides={true}
@@ -206,17 +227,20 @@ export default function Team() {
             slidesPerView: 3,
             spaceBetween: 80,
           },
-          
         }}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        {Blockchain.map((item,index) => (
-        <SwiperSlide><Card image={item.image_url} name={item.name} description={item.description} /></SwiperSlide>
+        {Blockchain.map((item, index) => (
+          <SwiperSlide key={item.id}>
+            <Card
+              image_url={item.image_url}
+              name={item.name}
+              description={item.description}
+            />
+          </SwiperSlide>
         ))}
-        
       </Swiper>
     </section>
   );
 }
-                                  

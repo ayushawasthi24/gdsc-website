@@ -3,6 +3,7 @@ import { useCallback } from "react";
 import "./Hero.css";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   const particlesInit = useCallback(async (engine) => {
@@ -56,9 +57,19 @@ const Hero = () => {
                 learn, share, and collaborate on exciting projects and events.
               </p>
               <div className="mt-6">
-                <button className="bg-yellow-400 hover:bg-yellow-400 text-black py-2 px-4 rounded">
-                  Join Us
-                </button>
+                <a
+                  href="https://gdsc.community.dev/indian-institute-of-technology-indore/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <motion.button
+                    whileHover={{ scale: 1.1, backgroundColor: "#FFBF00" }}
+                    whileTap={{ scale: 0.9 }}
+                    className="bg-yellow-400 hover:bg-yellow-500 text-white font-semibold py-2 px-4 rounded"
+                  >
+                    Join Us
+                  </motion.button>
+                </a>
               </div>
             </div>
             <div className="hidden md:w-1/2 md:block">
@@ -68,9 +79,6 @@ const Hero = () => {
                 className="rounded-md ms-5"
               />
             </div>
-          </div>
-          <div className="container">
-            {/* <h1>Hello wordl</h1> */}
           </div>
         </div>
       </div>

@@ -23,7 +23,7 @@ const SendUsMessage = () => {
   };
 
   return (
-    <div className="bg-blue-200 py-8">
+    <div className="py-8">
       <div className="max-w-md mx-auto p-6">
         <h2 className="text-4xl font-semibold text-center text-red-500 mb-4">
           Send Us a Message
