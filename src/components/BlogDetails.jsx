@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 const BlogDetails = () => {
   const blogDetails = {
     title: "GDSC Blog",
-    url: "https://your-blog-url-here.com",
+    url: "#",
     description:
       "Explore our blog for the latest tech updates and educational content.",
   };
@@ -76,7 +76,7 @@ const BlogDetails = () => {
       </div>
       {inView && (
         <motion.div variants={qrCodeVariants} className="flex items-center justify-center">
-          <img src="images/QR.png" alt="" className="w-1/2 h-1/2" />
+          <img src="images/QR.png" alt="" className="w-1/2 h-1/2 mt-2" />
         </motion.div>
       )}
     </div>

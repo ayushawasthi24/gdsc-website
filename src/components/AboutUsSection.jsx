@@ -40,14 +40,20 @@ const AboutUsSection = () => {
           <div className=" z-10">
             <h2 className="text-2xl font-semibold mb-4">About Us</h2>
             <p className="text-gray-700 ">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              hendrerit, justo eu vulputate malesuada, neque metus dictum lacus,
-              id aliquet erat tellus a nisi. Sed hendrerit odio non turpis
-              feugiat malesuada.
+              Google Developer Student Clubs are university based community
+              groups for students interested in Google developer technologies.
+              Students from all undergraduate or graduate programs with an
+              interest in growing as a developer are welcome. By joining a GDSC,
+              students grow their knowledge in a peer-to-peer learning
+              environment.
             </p>
             <p className="text-gray-700 mt-2">
-              Nullam suscipit, libero eget ullamcorper fermentum, sapien turpis
-              viverra est, nec feugiat quam justo id odio.
+              Google Developer Student Clubs (GDSC) is a programme that targets passionate
+              students from developer communities across the globe. This is a unique platform for
+              students to not just learn through P2P workshops but solve actual
+              real-world problems for the local community through sponsored
+              projects. IIT Indore is now part of the few institutes that have
+              been selected for this program.
             </p>
           </div>
         </div>
