@@ -28,7 +28,7 @@ const Footer = () => {
             <FaTwitter size={24} />
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/company/developers-students-club-iit-indore/mycompany/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:text-blue-700"
@@ -36,7 +36,7 @@ const Footer = () => {
             <FaLinkedin size={24} />
           </a>
           <a
-            href="#"
+            href="https://www.instagram.com/dsc_iiti/?hl=en"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:text-blue-700"
@@ -44,7 +44,7 @@ const Footer = () => {
             <FaInstagram size={24} />
           </a>
         </div>
-      </div>  
+      </div>
       <div className="text-gray-500 my-2">
         <div className="mx-auto text-center">
           <p>

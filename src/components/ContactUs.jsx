@@ -22,13 +22,13 @@ const ContactUs = () => {
       </div>
       <div className="relative flex items-center justify-center space-x-10">
         <motion.a
-          href="#"
+          href="https://www.instagram.com/dsc_iiti/?hl=en"
           className="p-4 bg-white backdrop-filter bg-opacity-80 rounded-full hover:scale-105 transform transition duration-300"
         >
           <FaInstagram className="text-3xl text-red-500" />
         </motion.a>
         <motion.a
-          href="#"
+          href="https://www.linkedin.com/company/developers-students-club-iit-indore/mycompany/"
           className="p-4 bg-white rounded-full hover:scale-105 transform transition duration-300"
         >
           <FaLinkedin className="text-3xl text-[#0097e6]" />

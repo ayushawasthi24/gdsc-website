@@ -111,6 +111,14 @@ const Navbar = () => {
             </li>
             <li className="">
               <a
+                href="/team"
+                className="block text-black hover:text-gray-300 border-2 border-gray-400 focus:outline rounded-xl"
+              >
+                Team
+              </a>
+            </li>
+            <li className="">
+              <a
                 href="/contact"
                 className="block text-black hover:text-gray-300 border-2 border-gray-400 focus:outline rounded-xl"
               >
