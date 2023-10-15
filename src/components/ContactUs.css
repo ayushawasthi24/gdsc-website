@@ -121,3 +121,8 @@ a:hover .setter {
   padding-left: 20px;
   padding-top: 25px;
 } */
+.block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
