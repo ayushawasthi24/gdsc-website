@@ -21,7 +21,7 @@ const ContactUs = () => {
         <h1 className="text-3xl font-bold text-center">Contact Us</h1>
       </div>
 
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center flex-col lg:flex-row">
         <div className="map mt-4">
           <iframe
             title="iitmap"
