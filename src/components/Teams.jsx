@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -10,7 +11,7 @@ import { GameDevelopment } from "../data/GameDevelopment";
 import { AppDevelopment } from "../data/AppDevelopment";
 import { MachineLearning } from "../data/MachineLearning";
 import { Blockchain } from "../data/Blockchain";
-
+import rohit from '../public/rohit.jpeg';
 function Card({ image_url, name, description, id }) {
   return (
     <div className="container sm:grid sm:grid-cols-2 sm:gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
@@ -41,6 +42,46 @@ export default function Team() {
           Our Team
         </h1>
       </div>
+      <div className="row">
+        <h1 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold">
+          GDSC Lead
+        </h1>
+      </div>
+      <Swiper
+        spaceBetween={30}
+        slidesPerView={4}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 80,
+          },
+        }}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        
+          <SwiperSlide>
+            <Card
+              image_url={rohit}
+              name='Rohit Dhanotia'
+              description='Web Development'
+            />
+          </SwiperSlide>
+        
+      </Swiper>
       <div className="row">
         <h1 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold">
           Web Development
