@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     min-height: 50vh;
+    margin-top: 2vh;
 }
 
 .card2 {
@@ -25,7 +26,7 @@
     padding-left: 10px;
     padding-top: 10px;
     z-index: -1;
-    height: 240px;
+    height: 270px;
     width: 70vw;
     background-size: cover;
     background-repeat: no-repeat;
