@@ -1,12 +1,13 @@
-import raina from '../public/raina.jpg'
+import arnav from '../public/Arnav.jpg'
 import yatharth from '../public/yatharth (2).jpg'
 import lovely from '../public/Lovely.jpg'
 import soham from '../public/Soham.jpg'
+import anushka from '../public/anushka.jpeg'
 export const MachineLearning = [
     {
         id: 1,
-        name: 'Raina Tathed ',
-        image_url:raina,
+        name: 'Arnav Jain',
+        image_url:arnav,
         description : 'Machine Learning',       
     },
     {
@@ -25,6 +26,12 @@ export const MachineLearning = [
         id:4,
         name:'Soham',
         image_url: soham,
+        description: 'Machine Learning'
+    },
+    {
+        id:5,
+        name:'Anushka Jha',
+        image_url: anushka,
         description: 'Machine Learning'
     }
     
