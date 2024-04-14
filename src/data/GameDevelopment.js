@@ -1,10 +1,10 @@
-import aryan from '../public/aryan.jpg'
+import rajat from '../public/rajat.png'
 import pratik from '../public/pratik.jpg'
 export const GameDevelopment = [
     {
         id: 1,
-        name: 'Aryan Jaiswal ',
-        image_url:aryan,
+        name: 'Rajat Vishwakarma  ',
+        image_url:rajat,
         description : 'Game Development',       
     },
     {

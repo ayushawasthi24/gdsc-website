@@ -2,11 +2,12 @@ import gaurav from "../public/gaurav.jpg";
 import harsh from "../public/harsh.jpg";
 import deepak from "../public/deepak.png";
 import rishi from "../public/rishi.jpg";
-import siddharth from "../public/Siddharth.jpeg";
+import vedant from "../public/Vedant.jpg";
 import ishan from "../public/ishan.jpg";
 import pvsekhar from "../public/PVSekhar.jpg";
 import ishita from "../public/ishita1.jpg";
 import ayush from "../public/ayush.jpeg";
+import akanksha from "../public/Akanksha.jpg"
 export const WebDevelopment = [
   {
     id: 1,
@@ -34,8 +35,8 @@ export const WebDevelopment = [
   },
   {
     id: 5,
-    name: "Siddharth Agrawal",
-    image_url: siddharth,
+    name: "Vedant Dinkar",
+    image_url: vedant,
     description: "Web Development",
   },
   {
@@ -62,4 +63,10 @@ export const WebDevelopment = [
     image_url: ayush,
     description: "Web Development",
   },
+  {
+    id: 10,
+    name: "Prasad Akanksha",
+    image_url: akanksha,
+    description: "Web Development",
+  }
 ];
